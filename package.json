@@ -1,0 +1,44 @@
+{
+  "name": "Meal-Accountant",
+  "version": "0.0.1",
+  "description": "Tracks and analyzes food costs",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ahvar/meal-accountant.git"
+  },
+  "contributors": [],
+  "main": "Gruntfile.js",
+  "engines": {
+    "node": ">=4.4.5"
+  },
+  "keywords": [
+    "tracker",
+    "costs",
+    "budget",
+    "planning"
+  ],
+  "author": {
+    "name": "Arthur Vargas",
+    "email": "ahvargas92@gmail.com",
+    "url": "http://ahvar.github.io/"
+  },
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ahvar/meal-accountant/issues"
+  },
+  "homepage": "https://github.com/ahvar/meal-accountant#readme",
+  "devDependencies": {
+    "grunt": "^1.0.1",
+    "grunt-contrib-concat": "^1.0.1",
+    "grunt-contrib-copy": "^1.0.0",
+    "grunt-contrib-htmlmin": "^2.0.0",
+    "grunt-mocha-test": "^0.12.7",
+    "mocha": "^2.5.3"
+  }
+}

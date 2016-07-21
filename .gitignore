@@ -1,0 +1,8 @@
+# This rule ignores node_modules
+node_modules
+
+# This rule ignores temporary files that end with ~
+*~
+
+
+
