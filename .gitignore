@@ -1,8 +1,20 @@
-# This rule ignores node_modules
+# node_modules
 node_modules
 
-# This rule ignores temporary files that end with ~
+# temporary files that end with ~
 *~
+
+# MS Word
+*.doc 
+
+# pdf
+*.pdf
+
+# bower_components
+bower_components
+
+# npm-debug log
+npm-debug.log
 
 
 

@@ -72,13 +72,34 @@ module.exports = function(grunt) {
 				},
 				src: ['test/**/*.js']
 			}
+		},
+
+		bowerInstall: {
+			dist: {
+				src: ['src/*.html'],
+				dependencies: true,
+				devDependencies: true,
+				exclude: []
+			}
+		},
+
+		wiredep: {
+			task: {
+				src: [
+					'src/*.html'
+				],
+				options: {
+
+				}
+			}
 		}
 
 	});
 
-	grunt.loadNpmTasks('grunt-contrib-concat');
-	grunt.loadNpmTasks('grunt-mocha-test');
+	grunt.loadNpmTasks('grunt-wiredep');
 	grunt.loadNpmTasks('grunt-contrib-copy');
 	grunt.loadNpmTasks('grunt-contrib-htmlmin');
-	grunt.registerTask('default', ['copy','concat','htmlmin']);
+	grunt.loadNpmTasks('grunt-contrib-concat');
+	grunt.loadNpmTasks('grunt-mocha-test');
+	grunt.registerTask('default', ['copy','bower-install','concat','htmlmin']);	
 };

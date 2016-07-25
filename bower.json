@@ -1,0 +1,8 @@
+{
+  "name": "meal-accountant",
+  "version": ".0.0.1",
+  "dependencies": {
+    "jQuery": "^3.1.0",
+    "knockout": "^3.4.0"
+  }
+}
