@@ -7,10 +7,46 @@
 	<!-- endbower -->
 </head>
 <body>
+<nav id="food-list">
+	<ul data-bind="foreach: foods">
+		<li data-bind="text: name,
+			click: $parent.selectFood.bind($parent),
+			css: {selected: $parent.isSelected($data)}">
+		</li>
+	</ul>
+</nav>
+
+<section id="food-details">
+
+	<h1 data-bind="text: title"></h1>
+
+	<h2>Details</h2>
+
+	<p>Servings: <span data-bind="text: servings"></span></p>
+	<p>Approximate Cook Time: <span data-bind="text: cookingTime"></span></p>
+
+	<h2>Costs</h2>
+
+	<ul data-bind="foreach: costs">
+		<li data-bind="text: $data"></li>
+	</ul>
+	
+	<h2>Stores</h2>
+	<ol data-bind="foreach: sources">
+		<li data-bind="text: $data"></li>
+	</ol>
+	<a data-bind="visible: hasLink,
+	attr: {href: link, name: name}"
+	target="_blank">Link</a>
+</section>		
 
 
 
-<!-- bower.js -->
+<!-- bower:js -->
+<script src="../bower_components/jQuery/dist/jquery.min"></script>
+<script src="../bower_components/knockout/dist/knockout.js"></script>
+<script src="scripts/food-list.js"></script>
+<script src="scripts/food-cost.js"></script>
 <!-- endbower -->	
 </body>
 </html>

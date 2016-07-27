@@ -97,6 +97,7 @@ module.exports = function(grunt) {
 	});
 
 	grunt.loadNpmTasks('grunt-wiredep');
+	grunt.loadNpmTasks('grunt-bower-install');
 	grunt.loadNpmTasks('grunt-contrib-copy');
 	grunt.loadNpmTasks('grunt-contrib-htmlmin');
 	grunt.loadNpmTasks('grunt-contrib-concat');
